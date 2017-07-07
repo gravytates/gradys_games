@@ -24,7 +24,7 @@
   <ul>
     <% @game.reviews.each do |review| %>
       <% if current_user && current_user.admin %>
-      <p>Review Inappropriate? <%= link_to "Delete", review_path(review),
+      <p>Review Inappropriate? <%= link_to "Delete Review", review_path(review),
                                :data => { :method => "delete"} %></p>
       <% end %>
       <h4>Author: <%= review.user.name %></h4>

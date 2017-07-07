@@ -15,6 +15,8 @@ FactoryGirl.define do
   end
 
   factory :review do
+    association :user, :factory => :admin_user, strategy: :build
+    game
     body 'what the adventure!'
     rating 4
   end

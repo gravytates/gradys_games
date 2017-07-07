@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <div class="container" id="container">
     <nav class="overlay-menu">
       <p>
         <% if current_user %>
@@ -23,10 +24,14 @@
         <% end %>
       </p>
     </nav>
-    <div class="container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <a id="github" href="https://github.com/gravytates" target="_blank">follow grady</a>
+      </div>
+    </footer>
   </body>
 </html>

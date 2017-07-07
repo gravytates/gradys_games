@@ -6,3 +6,23 @@
   height: 30px;
   width: auto;
 }
+
+.game_img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  a {
+    color: white;
+  }
+}

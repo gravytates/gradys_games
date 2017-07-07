@@ -96,6 +96,19 @@ describe "admin user routes and features" do
     expect(page).to have_content 'Review successfully added!'
   end
 
+  it 'will receive error when adding a review for a game with an empty field' do
+    user = FactoryGirl.create(:admin_user)
+    login_as(user, :scope => :user)
+    FactoryGirl.create(:game)
+    visit games_path
+    click_link 'Final Fantasy'
+    click_link 'New Review'
+    fill_in 'review_body', with: ''
+    select 4, from: 'review_rating'
+    click_button 'Create Review'
+    expect(page).to have_content 'errors'
+  end
+
   it 'will delete a review for a game' do
     user = FactoryGirl.create(:admin_user)
     login_as(user, :scope => :user)

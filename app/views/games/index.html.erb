@@ -1,5 +1,17 @@
 <h2>All Games</h2>
 
+<%= link_to "Alphabetically", :sort_by => 'alphabetical' %> |
+<%= link_to "Recent", :sort_by => 'recent' %> |
+<%= link_to "PS4", :sort_by => 'ps4' %> |
+<%= link_to "Xbox One", :sort_by => 'xbox' %> |
+<%= link_to "PC", :sort_by => 'pc' %> |
+<%= link_to "Switch", :sort_by => 'switch' %> |
+<%= link_to "RPG", :sort_by => 'rpg' %> |
+<%= link_to "Shooter", :sort_by => 'shooter' %> |
+<%= link_to "Sports", :sort_by => 'sports' %> |
+<%= link_to "MMO", :sort_by => 'mmo' %> |
+<%= link_to "Platformer", :sort_by => 'platformer' %> |
+
 <% if current_user && current_user.admin %>
   <h5>Admin Action: <%= link_to "Add New Game", new_game_path %></h5>
   <hr>

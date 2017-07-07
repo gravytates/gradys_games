@@ -1,6 +1,8 @@
 <h2>All Games</h2>
+<% if @filter_type != nil%>
+  <h3>Sorted by <em><%= @filter_type %></em></h3>
+<% end %>
 
-<h3>Sorted by <em><%= @filter_type %></em></h3>
 <%= link_to "Alphabetically", :sort_by => 'alphabetical' %> |
 <%= link_to "Recent", :sort_by => 'recent' %> |
 <%= link_to "PS4", :sort_by => 'ps4' %> |

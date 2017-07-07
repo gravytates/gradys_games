@@ -10,5 +10,7 @@ describe "admin user routes and features" do
     expect(page).to have_content 'Final Fantasy'
     click_link 'Switch'
     expect(page).to have_content 'No results returned. Choose another filter!'
+    click_link 'Highest Rating'
+    expect(page).to have_content 'Final Fantasy'
   end
 end

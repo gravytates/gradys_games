@@ -24,19 +24,20 @@
 
   <ul>
     <% @game.reviews.each do |review| %>
-      <% if current_user && current_user.admin %>
-      <p>Review Inappropriate? <%= link_to "Delete Review", review_path(review),
-                               :data => { :method => "delete"} %></p>
-      <% end %>
-      <h4>Author: <%= review.user.name %></h4>
-      <h4>Rating:
-        <% review.rating.times do %>
-          <%= image_tag("kodama.png", :alt => "kodama rating", :id => "rating_icon") %>
-        <%end%>
-      </h4>
-      <br>
-      <p><%= review.body %></p>
-      <hr>
+      <div class="well" id="review">
+        <% if current_user && current_user.admin %>
+        <p>Review Inappropriate? <%= link_to "Delete Review", review_path(review),
+                                 :data => { :method => "delete"} %></p>
+        <% end %>
+        <h4>Author: <%= review.user.name %></h4>
+        <h4>Rating:
+          <% review.rating.times do %>
+            <%= image_tag("kodama.png", :alt => "kodama rating", :id => "rating_icon") %>
+          <%end%>
+        </h4>
+        <br>
+        <p><%= review.body %></p>
+      </div>
     <% end %>
   </ul>
 <% else %>

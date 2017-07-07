@@ -13,15 +13,16 @@
 
   <ul>
     <% current_user.reviews.each do |review| %>
-      <h4>Game:  <%= review.game.name %></h4>
-      <h4>Rating:
-        <% review.rating.times do %>
-            <%= image_tag("kodama.png", :alt => "kodama rating", :id => "rating_icon") %>
-        <%end%>
-      </h4>
-      <br>
-      <p><%= review.body %></p>
-      <hr>
+      <div class="well" id="review">
+        <h4>Game:  <%= link_to review.game.name, game_path(review.game) %></h4>
+        <h4>Rating:
+          <% review.rating.times do %>
+              <%= image_tag("kodama.png", :alt => "kodama rating", :id => "rating_icon") %>
+          <%end%>
+        </h4>
+        <br>
+        <p><%= review.body %></p>
+      </div>
     <% end %>
   </ul>
 <% else %>

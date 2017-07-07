@@ -1,5 +1,8 @@
 class ReviewsController < ApplicationController
   # before_action :authorize, only: [:new, :create]
+  before_action :only => [:destroy] do
+    redirect_to new_user_session_path unless current_user && current_user.admin
+  end
 
   def new
     @game = Game.find(params[:game_id])

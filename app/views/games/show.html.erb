@@ -10,7 +10,7 @@
 <% if current_user && current_user.admin %>
   <h4>Admin Actions: </h4>
   <p><%= link_to "Edit", edit_game_path(@game) %></p>
-  <p><%= link_to "Delete", game_path(@game),
+  <p><%= link_to "Delete Game", game_path(@game),
                            :data => { :method => "delete"} %></p>
 
   <hr>

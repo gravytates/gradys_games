@@ -17,4 +17,17 @@ describe "admin user routes and features" do
     click_button 'Create Game'
     expect(page).to have_content 'Game successfully added!'
   end
+
+  it 'will edit a game' do
+    user = FactoryGirl.create(:admin_user)
+    login_as(user, :scope => :user)
+    FactoryGirl.create(:game)
+    visit games_path
+    click_link 'Final Fantasy'
+    expect(page).to have_content 'Description:'
+    click_link 'Edit'
+    fill_in 'game_name', with: 'Mario World'
+    click_button 'Update Game'
+    expect(page).to have_content 'Game successfully updated!'
+  end
 end

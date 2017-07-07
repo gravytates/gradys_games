@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :reviews
   end
 
-  # resources :reviews
+  resources :reviews
 
   resources :games do
     resources :reviews

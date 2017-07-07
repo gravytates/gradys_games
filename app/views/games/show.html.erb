@@ -11,8 +11,7 @@
   <h4>Admin Actions: </h4>
   <p><%= link_to "Edit", edit_game_path(@game) %></p>
   <p><%= link_to "Delete", game_path(@game),
-                           :data => {:confirm => "You sure?",
-                                     :method => "delete"} %></p>
+                           :data => { :method => "delete"} %></p>
 
   <hr>
 <% end %>
@@ -24,6 +23,10 @@
 
   <ul>
     <% @game.reviews.each do |review| %>
+      <% if current_user && current_user.admin %>
+      <p><%= link_to "Delete", review_path(review),
+                               :data => { :method => "delete"} %></p>
+      <% end %>
       <h4>Author: <%= review.user.name %></h4>
       <h4>Rating:
         <% review.rating.times do %>

@@ -5,15 +5,18 @@ class GamesController < ApplicationController
   end
 
   def index
+    @filter_type = params[:sort_by]
+    # binding.pry
     if params[:sort_by] == nil
       @games = Game.alphabetical
     else
       @games = Game.send(params[:sort_by])
       if Game.send(params[:sort_by]) == []
-        flash[:alert] = "No results returned.  Choose another filter!"
+        flash[:alert] = "No results returned. Choose another filter!"
       end
     end
   end
+
   def show
     @game = Game.find(params[:id])
   end

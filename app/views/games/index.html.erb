@@ -1,5 +1,6 @@
 <h2>All Games</h2>
 
+<h3>Sorted by <em><%= @filter_type %></em></h3>
 <%= link_to "Alphabetically", :sort_by => 'alphabetical' %> |
 <%= link_to "Recent", :sort_by => 'recent' %> |
 <%= link_to "PS4", :sort_by => 'ps4' %> |
@@ -11,6 +12,7 @@
 <%= link_to "Sports", :sort_by => 'sports' %> |
 <%= link_to "MMO", :sort_by => 'mmo' %> |
 <%= link_to "Platformer", :sort_by => 'platformer' %> |
+<%= link_to "Highest Rating", :sort_by => 'rating' %>
 
 <% if current_user && current_user.admin %>
   <h5>Admin Action: <%= link_to "Add New Game", new_game_path %></h5>

@@ -20,15 +20,21 @@ class Game < ApplicationRecord
   scope :platformer, -> { where(genre: 'Platformer') }
 
   def average_rating
-  average = 0
-  total = 0
-  if self.reviews.length != 0
-    self.reviews.each { |review| total += review.rating }
-    (total.round(1) / self.reviews.length.round(1)).round(1)
-  else
-    average.to_f
+    average = 0
+    total = 0
+    if self.reviews.length != 0
+      self.reviews.each { |review| total += review.rating }
+      (total.round(1) / self.reviews.length.round(1)).round(1)
+    else
+      average.to_f
+    end
   end
-end
+
+  def self.rating
+    games = Game.all
+    poor_games = games.sort_by {|obj| obj.average_rating}
+    poor_games.reverse
+  end
 
 private
   def titlecase

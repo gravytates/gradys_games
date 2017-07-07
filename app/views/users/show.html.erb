@@ -1,0 +1,9 @@
+<h1>Show User</h1>
+
+<h1>Welcome, <%= current_user.name %></h1>
+
+<p>
+  User: <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: 'delete' %> | <%= link_to "Home", root_path %>
+</p>
+
+<%= link_to 'Edit Profile', edit_user_registration_path %>

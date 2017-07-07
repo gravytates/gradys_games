@@ -1,0 +1,8 @@
+
+<%= link_to 'Sign In', new_user_session_path %>
+<%= link_to 'Sign Up', new_user_registration_path %>
+<% if current_user %>
+            <p>
+              User: <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: 'delete' %> | <%= link_to "User Profile", user_path(current_user) %>
+            </p>
+          <% end %>

@@ -1,5 +1,32 @@
+#container {
+  height: 100%;
+  margin-bottom: 5%;
+  position: relative;
+}
+
 .overlay-menu {
   text-align: center;
+}
+
+#jumbotron {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  height: 5%;
+  font-family: 'Slabo 13px', serif;
+}
+#jumbotron h1 {
+}
+
+#g1 {
+  color: rgb(50,215,234);
+}
+
+#g2 {
+  color: rgb(213,68,217);
+}
+
+#g3 {
+  color: rgb(183,48,80);
 }
 
 #rating_icon {
@@ -17,8 +44,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 35px;
-  background-color: grey;
+  height: 5%;
+  background-color: rgba(94,94,188,0.9);
   color: white;
   padding: 10px;
   text-align: center;

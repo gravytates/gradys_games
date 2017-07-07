@@ -6,24 +6,31 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Podkova|Slabo+13px" rel="stylesheet">
   </head>
 
   <body>
+    <div class="container-fluid" id="jumbotron" >
+      <div class="jumbotron" id="jumbotron">
+        <h1><span id="g1">G</span>rady's <span id="g2">G</span>ames</h1>
+        <h3>View, rate, and discuss Games!</h3>
+      </div>
+    </div>
     <div class="container" id="container">
-    <nav class="overlay-menu">
-      <p>
-        <% if current_user %>
+      <nav class="overlay-menu">
+        <p>
+          <% if current_user %>
           <p>
             <%= link_to "Home", root_path %> | User: <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: 'delete' %> | <%= link_to "User Profile", user_path(current_user) %> | <%= link_to 'Games', games_path %>
           </p>
-        <% else %>
+          <% else %>
           <p>
             <%= link_to "Home", root_path %> | <%= link_to 'Sign In', new_user_session_path %> |
             <%= link_to 'Sign Up', new_user_registration_path %> | <%= link_to 'Games', games_path %>
           </p>
-        <% end %>
-      </p>
-    </nav>
+          <% end %>
+        </p>
+      </nav>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <%= yield %>

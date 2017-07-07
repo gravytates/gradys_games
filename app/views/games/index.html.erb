@@ -25,6 +25,7 @@
         <th>Platform</th>
         <th>Genre</th>
         <th>Reviews</th>
+        <th>Average Rating</th>
         <th>Price</th>
         <!-- <th>Average Rating</th> -->
       </tr>
@@ -36,6 +37,11 @@
           <td><%= game.platform %></td>
           <td><%= game.genre %></td>
           <td><%= game.reviews.length %></td>
+          <td>
+            <% game.average_rating.round.times do %>
+              <%= image_tag("kodama.png", :alt => "kodama rating", :id => "rating_icon") %>
+            <%end%>
+          </td>
           <td>$<%= game.price %></td>
         </tr>
       <% end %>

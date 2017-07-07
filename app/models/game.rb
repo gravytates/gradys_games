@@ -1,5 +1,7 @@
 class Game < ApplicationRecord
   validates :name, :description, :price, :image, :genre, :platform, presence: true
+  validates :price, numericality: true
+  before_save(:titlecase)
 
   has_many :reviews, dependent: :destroy
   has_many :users, through: :reviews
@@ -16,5 +18,24 @@ class Game < ApplicationRecord
   scope :sports, -> { where(genre: 'Sports') }
   scope :mmo, -> { where(genre: 'MMO') }
   scope :platformer, -> { where(genre: 'Platformer') }
+
+  def average_rating
+  average = 0
+  total = 0
+  if self.reviews.length != 0
+    self.reviews.each { |review| total += review.rating }
+    (total.round(1) / self.reviews.length.round(1)).round(1)
+  else
+    average.to_f
+  end
+end
+
+private
+  def titlecase
+    new_name = self.name.split(' ')
+      .each{|word| word.capitalize! }
+      .join(' ')
+    self.name = new_name
+  end
 
 end

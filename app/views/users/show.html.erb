@@ -7,3 +7,24 @@
 </p>
 
 <%= link_to 'Edit Profile', edit_user_registration_path %>
+
+<h3>Reviews:</h3>
+<% if current_user.reviews.any? %>
+
+  <ul>
+    <% current_user.reviews.each do |review| %>
+      <h4>Game:  <%= review.game.name %></h4>
+      <h4>Rating:
+        <% review.rating.times do %>
+          <span>Star. </span>
+          <%#<%= image_tag("avo.png", :alt => "avocado rating", :id => "rating_icon") %>
+        <%end%>
+      </h4>
+      <br>
+      <p><%= review.body %></p>
+      <hr>
+    <% end %>
+  </ul>
+<% else %>
+  <p>You have written no reviews yet!</p>
+<% end %>

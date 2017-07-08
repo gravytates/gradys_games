@@ -2,6 +2,8 @@
 
 ![jumbo](https://user-images.githubusercontent.com/25161777/27980677-3b5f65e6-6336-11e7-801a-985a88e04f02.png)
 
+Visit the Site!(https://gradys-games.herokuapp.com/)
+
 Welcome to Grady's Games, my Rails site for gaming! Grady's Games serves as an online store for users view game details and read reviews other users have left. Authorization using Devise allows Users to sign up, and write reviews. Admin access is available to control game availability and its details, and which potentially inappropriate reviews to moderate. Seeded with the faker gem, these games, their details and many of the reviews from the auto generated users are a bunch of fun nonsense. Enjoy!
 
 ## Prerequisites
@@ -113,7 +115,7 @@ This application includes both Unit and User Integration testing.  It primarily 
 
 MIT License
 
-Copyright (c) 2017 Grady Shelton 
+Copyright (c) 2017 Grady Shelton
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

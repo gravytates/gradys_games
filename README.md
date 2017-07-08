@@ -11,9 +11,6 @@ Welcome to Grady's Games, my Rails site for gaming! Grady's Games serves as an o
 Web browser with ES6 compatibility
 Examples: Chrome, Safari
 
-Web browser with ES6 compatibility
-Examples: Chrome, Safari
-
 ### Installing
 
 Clone this repo by typing into the terminal:

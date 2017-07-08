@@ -64,37 +64,35 @@ This application includes both Unit and User Integration testing.  It primarily 
 
 ### Landing Page
 
-![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+![landing](https://user-images.githubusercontent.com/25161777/27980676-3b5ec19a-6336-11e7-8a0f-ae50bd76d7c5.png)
 
 ### Login Page
 
-![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+![login](https://user-images.githubusercontent.com/25161777/27980675-3b5dfda0-6336-11e7-85db-faf4b16a920c.png)
 
 ### Profile Page
 
-![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+![profile](https://user-images.githubusercontent.com/25161777/27980674-3b5d99be-6336-11e7-887d-d45f2565b637.png)
 
 ### Games Page
 
-![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+![games](https://user-images.githubusercontent.com/25161777/27980672-3b5c7200-6336-11e7-95cf-38db08c1046c.png)
 
 ### Game Details Page
 
-![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+![details](https://user-images.githubusercontent.com/25161777/27980673-3b5caf0e-6336-11e7-8af0-edf86adbb6c6.png)
 
 ### Reviews
 
-![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+![reviews](https://user-images.githubusercontent.com/25161777/27980678-3b73741e-6336-11e7-8317-8869c6b46294.png)
 
 ### Test Coverage
 
-![tests](https://user-images.githubusercontent.com/25161777/27937072-74ec5742-6269-11e7-8f31-d0090f5564ec.png)
-
+![tests](https://user-images.githubusercontent.com/25161777/27980679-3b73edae-6336-11e7-9720-cc9bb7f42f33.png)
 
 ## Authors
 
 * Grady Shelton
-* Monique St. Laurent
 
 ### Technologies Used
 
@@ -115,8 +113,7 @@ This application includes both Unit and User Integration testing.  It primarily 
 
 MIT License
 
-Copyright (c) 2017 Grady Shelton and Monique St. Laurent
-
+Copyright (c) 2017 Grady Shelton 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

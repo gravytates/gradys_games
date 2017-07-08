@@ -66,7 +66,8 @@ This application includes both Unit and User Integration testing.  It primarily 
 
 ### Landing Page
 
-![landing](https://user-images.githubusercontent.com/25161777/27980676-3b5ec19a-6336-11e7-8a0f-ae50bd76d7c5.png)
+![landing2](https://user-images.githubusercontent.com/25161777/27981156-8f3785da-633c-11e7-8620-51a40f5b8dfe.png)
+
 
 ### Login Page
 
@@ -78,11 +79,11 @@ This application includes both Unit and User Integration testing.  It primarily 
 
 ### Games Page
 
-![games](https://user-images.githubusercontent.com/25161777/27980672-3b5c7200-6336-11e7-95cf-38db08c1046c.png)
+![games2](https://user-images.githubusercontent.com/25161777/27981155-8f3790e8-633c-11e7-9a8d-df521c8464c3.png)
 
 ### Game Details Page
 
-![details](https://user-images.githubusercontent.com/25161777/27980673-3b5caf0e-6336-11e7-8af0-edf86adbb6c6.png)
+![detail2](https://user-images.githubusercontent.com/25161777/27981157-8f391fd0-633c-11e7-9365-5f6408a31c72.png)
 
 ### Reviews
 

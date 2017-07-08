@@ -1,6 +1,6 @@
-<h2>All Games</h2>
+<h2 id="slogan">All Games</h2>
 <% if @filter_type != nil%>
-  <h3>Sorted by <em><%= @filter_type %></em></h3>
+  <h3 id="about">Sorted by <em><%= @filter_type %></em></h3>
 <% end %>
 
 <%= link_to "Alphabetically", :sort_by => 'alphabetical' %> |

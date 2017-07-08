@@ -39,6 +39,7 @@ gem 'rubocop', '~> 0.49.1', require: false
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'faker'
+gem 'factory_girl_rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -47,7 +48,6 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'capybara'
-  gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
 end

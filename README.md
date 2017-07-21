@@ -4,7 +4,7 @@
 
 [Visit the Site!](https://gradys-games.herokuapp.com/)
 
-Welcome to Grady's Games, my Rails site for gaming! Grady's Games serves as an online store for users view game details and read reviews other users have left. Authorization using Devise allows Users to sign up, and write reviews. Admin access is available to control game availability and its details, and which potentially inappropriate reviews to moderate. Seeded with the faker gem, these games, their details and many of the reviews from the auto generated users are a bunch of fun nonsense. Enjoy!
+Welcome to Grady's Games, my week 17 solo Rails site for gaming! Grady's Games serves as an online store for users view game details and read reviews other users have left. Authorization using Devise allows Users to sign up, and write reviews. Admin access is available to control game availability and its details, and which potentially inappropriate reviews to moderate. Seeded with the faker gem, these games, their details and many of the reviews from the auto generated users are a bunch of fun nonsense. Enjoy!
 
 ## Prerequisites
 
